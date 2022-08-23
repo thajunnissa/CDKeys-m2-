@@ -40,10 +40,9 @@ public WebDriver driver;
 	driver=initializeDriver();
 
     driver.get("https://test:test123@@m2.omn-it.net/");
-   
-     
-    
+           
      driver.manage().window().maximize(); 
+     log.info("Navigated to home page");
      CheckoutPage cp=new CheckoutPage(driver);
      cp.getCurrency().click();
      cp.getEURCurrency().click();
